@@ -1,76 +1,44 @@
-<!DOCTYPE html>
-
-
-
-<html lang="en" dir="ltr">
-  
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>My link</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="image/iconHome.png">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://kit.fontawesome.com/26d4a64054.js"></script>
+    <title>TreeLink</title>
+</head>
+<body>
+    
+
+
+    
+
+<div class="profiledata">
+    <div class="profile-name2"> DanJakyt </div>
+    <div class="profile-name3"> And I'm <span class="typing"></span></div>
+</div>    
+
+
     <script src="script.js"></script>
-  </head>
+    <img class="profile-picture" src="IMG_8538.PNG" alt=" Profile Picture :)" >
+ 
+ 
 
-  
-  <body>
-    <div class="navbar">
-      <ul>
+   
 
-        <li>
-          <a onclick="openUrl('https:/\/danjakyt.github.io/Site/', '_blank')">
-            <i class='bx bx-home icon'></i>
-          </a>
-        </li>
-
-        <li>
-          <a onclick="openUrl('https:/\/discord.com/invite/5fj53unrWe', '_blank')">
-            <i class='bx bxl-discord-alt icon'></i>
-          </a>
-        </li>
-
-        <li>
-          <a onclick="openUrl('https:/\/youtube.com/c/DanJakyt', '_blank')">
-            <i class='bx bxl-youtube icon'></i>
-          </a>
-        </li>
-
-        <li>
-          <a onclick="openUrl('github/index.html', '_self')">
-            <i class='bx bxl-github icon' ></i>
-          </a>
-        </li>
-
-        <li>
-          <a onclick="openUrl('https:/\/it.tradingview.com/symbols/BTCUSD/', '_blank')">
-            <i class='bx bxl-bitcoin'></i>
-          </a>
-        </li>
+    <!-- Links-->
+        <a href="https://github.com/DanJakyt" class="links-github"><i class="fab fa-github"></i> Github</a>
+        <a href="https://www.youtube.com/c/DanJakyt" class="links-youtube"><i class="fab fa-youtube" ></i> Youtube</a>
+        <a href="https://twitter.com/DanJakyt" class="links-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="mailto:danjakyt.info@libero.it" class="links-mail"><i class="far fa-envelope"></i> Email</a>
+        <a href="mailto:danjakyt.info@libero.it" class="links-discord"><i class="fab fa-discord"></i> Discord</a>
+       
 
 
 
-
-      </ul>
-    </div>
-
-    <script>
-
-    const navBar = document.querySelector(".navbar")
-          allLi = document.querySelectorAll("li");
-
-    allLi.forEach((li, index) => {
-      li.addEventListener("click" , e =>{
-        e.preventDefault(); //preventing from submitting
-        navBar.querySelector(".active").classList.remove("active");
-        li.classList.add("active");
-
-        const indicator = document.querySelector(".indicator");
-        indicator.style.transform = `translateX(calc(${index * 90}px))`;
-      });
-    });
-
-    </script>
-
-  </body>
+    <div class="bottom-text"><p class="copyright">2022 © <a href="https://github.com/DanJakyt">DanJakyt</a></p></div>
+ 
+</body>
 </html>
+
